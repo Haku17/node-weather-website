@@ -65,7 +65,8 @@ app.get('/weather', (req, res) => {
                 rainChance: forecastData.rainChance,
                 address: req.query.address,
                 high: forecastData.high,
-                low: forecastData.low 
+                low: forecastData.low,
+                precipType: forecastData.precipType
             })
         })
     })
